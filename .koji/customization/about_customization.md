@@ -16,3 +16,29 @@ the schema from one of the existing configurations.
 
 The visual configuration tool won't work if there is an error in your json file.
 Watch out for a trailing comma or a missed curly brace.
+
+### Sample
+
+```
+{
+  "settings": {
+    "title": "Welcome to your Koji React App"
+  },
+  "@@editor": [
+    {
+      "key": "settings",
+      "name": "Settings",
+      "icon": "📚",
+      "source": "settings.json",
+      "fields": [
+        {
+          "key": "title",
+          "name": "Title",
+          "description": "The title that is displayed on the page",
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}
+```

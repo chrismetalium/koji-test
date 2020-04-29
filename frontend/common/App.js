@@ -1,49 +1,29 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
-import Koji from '@withkoji/vcc';
+import styled from 'styled-components';
 
 const Container = styled.div`
-    background-color: ${() => Koji.config.colors.backgroundColor};
+    background-color: #395b88;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    color: ${() => Koji.config.colors.textColor};
     text-align: center;
+    color: #fcfcfc;
 `;
 
-const AppLogoSpin = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-`;
-
-const Content = styled.div`
-  padding-bottom: 8px;
-`;
-
-const Icon = styled.div`
-    animation: ${AppLogoSpin} infinite 20s linear;
-    height: 50vmin;
-    width: 50vmin;
-    pointer-events: none;
-    background-image: url(${() => Koji.config.images.icon});
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-bottom: 16px;
+const Image = styled.img`
+    max-width: 60%;
+    max-height: 60%;
 `;
 
 class App extends React.Component {
   render() {
     return (
       <Container>
-        <h1>{Koji.config.strings.title}</h1>
-        <Icon />
+        <h1>{'Welcome to Your App'}</h1>
+        <Image src={'https://images.koji-cdn.com/d9c6b38e-08c4-4faf-ae8e-01082c41a0fb/3f83q-9634d620e97345a6b250ca2feb7e5a2e.png'} />
       </Container>
     );
   }
