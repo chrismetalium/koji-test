@@ -14,8 +14,8 @@ const Container = styled.div`
 `;
 
 const Image = styled.img`
-    max-width: 60%;
-    max-height: 60%;
+    max-width: 50vmin;
+    max-height: 50vmin;
 `;
 
 class App extends React.Component {
