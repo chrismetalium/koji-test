@@ -1,0 +1,28 @@
+{
+	"settings": {
+		"name": "KojiApp",
+		"title": "Koji React App"
+	},
+	"@@editor": [
+		{
+			"key": "settings",
+			"name": "Settings",
+			"icon": "📚",
+			"source": "settings.json",
+			"fields": [
+				{
+					"key": "name",
+					"name": "App Name",
+					"description": "Application name",
+					"type": "text"
+				},
+				{
+					"key": "title",
+					"name": "Title",
+					"description": "Application title",
+					"type": "text"
+				}
+			]
+		}
+	]
+}

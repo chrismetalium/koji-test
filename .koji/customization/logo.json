@@ -1,0 +1,21 @@
+{
+	"logo": {
+		"logo": "https://images.koji-cdn.com/4abf5dfe-2157-410c-a42e-c15d72e56a7a/1okli-playerKeemGnome_020.png"
+	},
+	"@@editor": [
+		{
+			"key": "logo",
+			"name": "Logo",
+			"icon": "🖼️",
+			"source": "logo.json",
+			"fields": [
+				{
+					"key": "logo",
+					"name": "App Logo",
+					"description": "App logo image",
+					"type": "image"
+				}
+			]
+		}
+	]
+}
